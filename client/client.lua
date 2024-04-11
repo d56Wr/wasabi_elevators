@@ -87,7 +87,7 @@ AddEventHandler('wasabi_elevator:openMenu', function(data)
                 --args = { elevator = elevator, floor = k }
             })
         elseif v.groups then
-            local found
+            local found = false
             for i=1, #v.groups do
                 if PlayerData.job.name == v.groups[i] then
                     found = true
